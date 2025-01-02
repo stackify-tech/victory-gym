@@ -1,6 +1,7 @@
 .nice-select {
   -webkit-tap-highlight-color: transparent;
   background-color: #fff;
+  color: black; /* new change */
   border-radius: 5px;
   border: solid 1px #e8e8e8;
   box-sizing: border-box;
@@ -113,6 +114,7 @@
   .nice-select .option {
     cursor: pointer;
     font-weight: 400;
+    color: black; /* new change */
     line-height: 40px;
     list-style: none;
     min-height: 40px;
@@ -128,7 +130,7 @@
       font-weight: bold; }
     .nice-select .option.disabled {
       background-color: transparent;
-      color: #999;
+      color: #4b4949;  /* new change */
       cursor: default; }
 
 .no-csspointerevents .nice-select .list {
