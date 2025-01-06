@@ -510,7 +510,7 @@
 -----------------------*/
 
 .gettouch-section {
-	background: #0a0a0a;
+	background: black;
 	padding: 30px 0 15px;
 }
 
@@ -559,7 +559,7 @@
 	right: -18px;
 	top: 0;
 	content: "|";
-	color: #545454;
+	color: black;
 }
 
 .gt-text ul li:last-child {
@@ -883,7 +883,7 @@ color:black;background:black
 background:yellow;font-family:"Teko",sans-serif;text-transform:uppercase;padding:27px 44px;color:black;cursor:pointer;display:inline-block;font-size:18px;font-weight:300;border-radius:0px;line-height:1;-moz-user-select:none;letter-spacing:1px;line-height:0;margin-bottom:0;margin:10px;cursor:pointer;transition:color 0.4s linear;position:relative;z-index:1;border:0;overflow:hidden;margin:0
 }
 .btn::before{
-content:"";position:absolute;left:0;top:0;width:101%;height:101%;background:rgb(73, 73, 4);z-index:1;border-radius:5px;transition:transform 0.5s;transition-timing-function:ease;transform-origin:0 0;transition-timing-function:cubic-bezier(0.5, 1.6, 0.4, 0.7);transform:scaleX(0);border-radius:0px
+content:"";position:absolute;left:0;top:0;width:101%;height:101%;background:#B58D00;z-index:1;border-radius:5px;transition:transform 0.5s;transition-timing-function:ease;transform-origin:0 0;transition-timing-function:cubic-bezier(0.5, 1.6, 0.4, 0.7);transform:scaleX(0);border-radius:0px
 }
 .btn:hover::before{
 transform:scaleX(1);color:#fff !important;z-index:-1
@@ -940,7 +940,7 @@ transform:scaleY(1);border:1px solid transparent
 color:black
 }
 #scrollUp,#back-top{
-background:yellow;height:50px;width:50px;right:31px;bottom:18px;position:fixed;color:#fff;font-size:20px;text-align:center;border-radius:50%;line-height:48px;border:2px solid transparent;box-shadow:0 0 10px 3px rgba(5, 1, 1, 0.2)
+background:yellow;height:50px;width:50px;right:31px;bottom:18px;position:fixed;color:white;font-size:20px;text-align:center;border-radius:50%;line-height:48px;border:2px solid transparent;box-shadow:0 0 10px 3px rgba(5, 1, 1, 0.2)
 }
 @media (max-width: 575px){
 #scrollUp,#back-top{

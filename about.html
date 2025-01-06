@@ -81,8 +81,8 @@
                                         <ul id="navigation">
                                             <li><a href="index.html">HOME</a></li>
                                             <li><a href="about.html">ABOUT US</a></li>
-                                            <li><a href="services.html">SERVICES</a></li>
-                                            <li><a href="schedule.html">SCHEDULES</a></li>
+                                            <!--<li><a href="services.html">SERVICES</a></li>
+                                            <li><a href="schedule.html">SCHEDULES</a></li>--->
                                             <li><a href="gallery.html">GALLERY</a></li>
                                             <li><a href="contact.html">CONTACT US</a></li>
                                         </ul>
@@ -424,6 +424,92 @@
 
 
 
+<div style="background-color: black; padding-top:100px">
+    <div id="schedule">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="filters">
+                    <ul class="schedule-filter">
+                        <li class="active" data-tsfilter="monday" style="font-size: 20px;">Monday</li>
+                        <li data-tsfilter="tuesday" style="font-size: 20px;">Tuesday</li>
+                        <li data-tsfilter="wednesday" style="font-size: 20px;">Wednesday</li>
+                        <li data-tsfilter="thursday" style="font-size: 20px;">Thursday</li>
+                        <li data-tsfilter="friday" style="font-size: 20px;">Friday</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-10 offset-lg-1">
+                <div class="schedule-table filtering">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="day-time">Fitness Class</td>
+                                <td class="monday ts-item show" data-tsmeta="monday">10:00AM - 11:30AM</td>
+                                <td class="tuesday ts-item" data-tsmeta="tuesday">2:00PM - 3:30PM</td>
+                                <td>William G. Stewart</td>
+                            </tr>
+                            <tr>
+                                <td class="day-time">Muscle Training</td>
+                                <td class="friday ts-item" data-tsmeta="friday">10:00AM - 11:30AM</td>
+                                <td class="thursday ts-item" data-tsmeta="thursday">2:00PM - 3:30PM</td>
+                                <td>Paul D. Newman</td>
+                            </tr>
+                            <tr>
+                                <td class="day-time">Body Building</td>
+                                <td class="tuesday ts-item" data-tsmeta="tuesday">10:00AM - 11:30AM</td>
+                                <td class="monday ts-item show" data-tsmeta="monday">2:00PM - 3:30PM</td>
+                                <td>Boyd C. Harris</td>
+                            </tr>
+                            <tr>
+                                <td class="day-time">Yoga Training Class</td>
+                                <td class="wednesday ts-item" data-tsmeta="wednesday">10:00AM - 11:30AM</td>
+                                <td class="friday ts-item" data-tsmeta="friday">2:00PM - 3:30PM</td>
+                                <td>Hector T. Daigle</td>
+                            </tr>
+                            <tr>
+                                <td class="day-time">Advanced Training</td>
+                                <td class="thursday ts-item" data-tsmeta="thursday">10:00AM - 11:30AM</td>
+                                <td class="wednesday ts-item" data-tsmeta="wednesday">2:00PM - 3:30PM</td>
+                                <td>Bret D. Bowers</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br><br><br><br>
+
+    <script>
+        const filters = document.querySelectorAll('.schedule-filter li');
+        const scheduleItems = document.querySelectorAll('.ts-item');
+
+        filters.forEach(filter => {
+            filter.addEventListener('click', () => {
+                // Remove active class from all filters
+                filters.forEach(f => f.classList.remove('active'));
+                // Add active class to the clicked filter
+                filter.classList.add('active');
+
+                // Get the day to filter
+                const filterValue = filter.getAttribute('data-tsfilter');
+
+                // Show/Hide schedule items based on filter
+                scheduleItems.forEach(item => {
+                    if (item.getAttribute('data-tsmeta') === filterValue) {
+                        item.classList.add('show');
+                    } else {
+                        item.classList.remove('show');
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
+
+
 
 
 
@@ -690,7 +776,7 @@
     </footer>
     <!-- Scroll Up -->
     <div id="back-top" >
-        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt" style="color:black;"></i></a>
     </div>
 
     <!-- JS here -->
