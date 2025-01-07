@@ -29,14 +29,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48x48.png">
 
-
-
+<!------------------------------------------------------------------------------------------------------
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" crossorigin="anonymous">
-
+--------------------------------------------------------------------------------------------------------->
 	<!-- CSS here -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -51,12 +51,12 @@
 	<link rel="stylesheet" href="assets/css/slick.css">
 	<link rel="stylesheet" href="assets/css/nice-select.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
 
 
 
 
 </head>
-
 
 <body>
     <!-- ? Preloader Start -->
@@ -124,7 +124,7 @@
                             <div class="col-xl-7 col-lg-9 col-md-8 col-sm-9">
                                 <div class="hero__caption">
                                     <span data-animation="fadeInLeft" data-delay="0.1s">Elevate Your Fitness Journey with Us</span>
-                                    <h1 data-animation="fadeInLeft" data-delay="0.4s">Sculpt Your Ideal Body for Health and Energy</h1>
+                                    <h1 data-animation="fadeInLeft" data-delay="0.4s">Achieve Your Dream Body for Ultimate Health and Vitality</h1>
                                     <a href="from.html" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.8s">Become a Fitness Insider</a>
                                 </div>
                             </div>
@@ -138,7 +138,7 @@
                             <div class="col-xl-7 col-lg-9 col-md-8 col-sm-9">
                                 <div class="hero__caption">
                                     <span data-animation="fadeInLeft" data-delay="0.1s">Elevate Your Fitness Journey with Us</span>
-                                    <h1 data-animation="fadeInLeft" data-delay="0.4s">Sculpt Your Ideal Body for Health and Energy</h1>
+                                    <h1 data-animation="fadeInLeft" data-delay="0.4s">Achieve Your Dream Body for Ultimate Health and Vitality</h1>
                                     <a href="from.html" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.8s">Become a Fitness Insider</a>
                                 </div>
                             </div>
@@ -234,63 +234,11 @@
     </div>
 </div>
 </div>
-
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Custom JavaScript -->
-<script>
-    function calculateBMI() {
-        const height = document.getElementById("height").value;
-        const weight = document.getElementById("weight").value;
-
-        if (height === "" || weight === "") {
-            document.getElementById("bmi-result").innerHTML = "Please enter both height and weight.";
-            return;
-        }
-
-        const heightInMeters = height / 100;
-        const bmi = (weight / (heightInMeters * heightInMeters)).toFixed(1);
-
-        let status = "";
-        if (bmi < 18.5) {
-            status = "Underweight";
-        } else if (bmi >= 18.5 && bmi <= 24.9) {
-            status = "Healthy";
-        } else if (bmi >= 25 && bmi <= 29.9) {
-            status = "Overweight";
-        } else {
-            status = "Obese";
-        }
-
-        document.getElementById("bmi-result").innerHTML = `Your BMI is ${bmi} (${status})`;
-    }
-</script>
 </div>
 
 <!------------------------------------👀 BMI Calculator Section end ----------------------------------------->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       
-       
-        <!-- About start 👀----------------------------------------------------------->
+<!-- About start 👀----------------------------------------------------------->
 
         <div class="about">
             <!-- Why Choose Us Section -->
@@ -304,25 +252,26 @@
                             <div class="icon-circle mb-3" style="border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
                                 <img src="assets/img/about/first.png" alt="Your Image Description" class="img-fluid"></div>
                             <h3 class="fit" style="color: yellow;">STATE-OF-THE-ART FITNESS EQUIPMENT</h3>
-                            <p style="color: white;">Discover the best in modern fitness technology with our cutting-edge gym machines designed to help you achieve your workout goals efficiently.</p>
+                            <p class="text-justify" style="color: white;">Discover cutting-edge gym machines designed to help you achieve your fitness goals efficiently.
+                            </p>
                         </div>
                         <div class="col-md-3">
                             <div class="icon-circle mb-3" style="border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
                                 <img src="assets/img/about/second.png" alt="Your Image Description" class="img-fluid"></div>
-                            <h3 class="fit" style="color: yellow;">PERSONALIZED NUTRITION PLANS FOR BETTER HEALTH</h3>
-                            <p style="color: white;">Work with our expert nutritionists to create a tailored meal plan that supports your fitness goals and promotes a healthier lifestyle.</p>
+                            <h3 class="fit" style="color: yellow;">PERSONALIZED NUTRITION PLANS FOR HEALTH</h3>
+                            <p class="text-justify" style="color: white;">Work with expert nutritionists to create tailored meal plans that promote a healthier lifestyle.</p>
                         </div>
                         <div class="col-md-3">
                             <div class="icon-circle mb-3" style="border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
                                 <img src="assets/img/about/third.png" alt="Your Image Description" class="img-fluid"></div>
                             <h3 class="fit" style="color: yellow;">EXPERT-LED GYM TRAINING FOR ALL LEVELS</h6>
-                            <p style="color: white;">Train with our certified fitness professionals who provide personalized workout programs to suit beginners and advanced athletes alike.</p>
+                            <p class="text-justify" style="color: white;">Train with certified professionals offering personalized workouts for all fitness levels.</p>
                         </div>
                         <div class="col-md-3">
                             <div class="icon-circle mb-3" style="border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
                                 <img src="assets/img/about/forth.png" alt="Your Image Description" class="img-fluid"></div>
-                            <h3 class="fit" style="color: yellow;">CUSTOMIZED FITNESS EXPERIENCE FOR TRANSFORMATION</h3>
-                            <p style="color: white;">Experience workouts uniquely crafted to align with your health goals, preferences, and fitness level for a truly transformative journey.
+                            <h3 class="fit" style="color: yellow;">CUSTOMIZED FITNESS EXPERIENCE FOR YOU</h3>
+                            <p class="text-justify" style="color: white;">Experience workouts crafted to match your health goals, preferences, and fitness level.
         
                             </p>
                         </div>
@@ -366,24 +315,10 @@
 
      <!-- About end👀 ----------------------------------------------------------->
 
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <!--? Services Area Start -->
+<!--? Services Area Start -------------------------------------------------------------------------->
         
         <div class="section-tittle section-tittle2">
-            <span>oUR sERVICES FOR YOU</span>
+    
 
 
         <section class="services-area pt-100 pb-150 section-bg" data-background="assets/img/gallery/section_bg01.png">
@@ -397,12 +332,12 @@
                             </div>
                         </div>
                         <div class="col-xl-2 col-lg-2 col-md-3">
-                            <a href="services.html" class="btn wantToWork-btn f-right">Explore Services</a>
+                            <a href="from.html" class="btn wantToWork-btn f-right">Explore Services</a>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- Want To work End -->
+            <!-- Want To work End ----------------------------------------------------->
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-6">
@@ -425,11 +360,11 @@
                                 <i class="flaticon-healthcare-and-medical"></i>
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">Personalized Health and Fitness Solutions</a></h5>
-                                <p>Transform your fitness journey with expert health advice, personalized training programs, and a supportive community. Your health is our top priority.</p>
+                                <h5><a href="services.html">Personalized Nutrition and Fitness Plans</a></h5>
+                                <p>Empower your wellness journey with tailored training, expert nutrition counseling, and a supportive community dedicated to your health and happiness.</p>
                             </div>
                             <div class="img-cap">
-                                <a href="services.html" class="">Explore Our Fitness Journey<i class="ti-arrow-right"></i></a>
+                                <a href="from.html" class="">Explore Our Fitness Journey<i class="ti-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -439,27 +374,21 @@
                                 <i class="flaticon-clock"></i>
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">Effective Gym Strategies for Fast Results</a></h5>
+                                <h5><a href="from.html">Effective Gym Strategies for Rapid Results</a></h5>
                                 <p>Maximize your workout efficiency with customized gym strategies tailored to your fitness level. Build strength, burn calories, and see results faster.</p>
                             </div>
                             <div class="img-cap">
-                                <a href="services.html" class="">Explore Our Fitness Journey <i class="ti-arrow-right"></i></a>
+                                <a href="from.html" class="">Explore Our Fitness Journey <i class="ti-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section> 
-        <!-- Services Area End -->
+        <!-- Services Area End ------------------------------------------------------------------------>
 
 
-
-
-
-
-
-
-<!-- Pricing Section -->
+<!-------------------------------------- Pricing Section ------------------------------------------------>
 <section class="pricing-section spad">
     <div class="container">
         <div class="section-title text-center">
@@ -539,8 +468,8 @@
                     <ul style="text-align: center; margin-bottom:54px;">
                         <li>Personal Training Fee: RS.6000/-</li>
                         <li>(Includes Admission)</li>
-                        <li>Customized workout plans tailored for you.</li>
-                        <li>Get one-on-one attention and guidance.</li>
+                        <li>Customized workout plans.</li>
+                        <li>Get personalised guidance.</li>
                     </ul>
                     <a href="from.html" class="btn header-btn">Get Started</a>
                 </div>
@@ -548,19 +477,9 @@
         </div>
     </div>
 </section>
-<!-- Pricing Section end -->
+<!-------------------------- Pricing Section end ---------------------------------------->
 
-
-
-
-
-
-
-
-
-
-
-        <!-----------------------------------------expert trainers--------->
+<!-----------------------------------------expert trainers--------------------------------->
         <section class="wantToWork-area w-padding">
             <div class="container">
                 <div class="row align-items-end justify-content-between">
@@ -601,13 +520,102 @@
                     <img class="trainer-image" src="assets/img/trainers/trainer4.jpg" alt="Trainer 4">
                 </div>
             </div>
-        </div>
-        
-        <!-- Bootstrap JS & jQuery -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </div><br><br><br>
         <!-- Team Ara End ---------------------------------------------------------------------------------->
+
+
+
+
+<!-----------------------------------------------gallery-------------------------------------------------->
+
+
+<section class="portfolio">
+	
+    <header class="section-head">
+        <h1>SOME OF MY LATEST WORKS</h1>
+    </header>
+
+    <main class="mainContainer">
+        
+        <!--  *****  Buttons Section Starts  *****  -->
+        <div class="button-group">
+            <button class="button active" data-filter="*">All</button>
+            <button class="button" data-filter=".design">Design</button>
+        <button class="button" data-filter=".development">Development</button>
+            <button class="button" data-filter=".logo">Logo</button>
+        </div>
+        <!--  *****  Buttons Section Ends  *****  -->
+
+        <!--  *****  Gallery Section Starts  *****  -->
+        <div class="gallery">
+            
+            <!--  *****  Card 1 Starts  *****  -->
+            <div class="item design">
+                <img src="assets/img/gallery/gallery1.png">
+                <div class="overlay">
+                    <a href="gallery.html">VIEW MORE</a>
+                </div>
+            </div>
+            <!--  *****  Card 1 Ends  *****  -->
+
+            <!--  *****  Card 2 Starts  *****  -->
+            <div class="item design">
+                <img src="assets/img/gallery/gallery2.png">
+                <div class="overlay">
+                    <a href="gallery.html">VIEW MORE</a>
+                </div>
+            </div>
+            <!--  *****  Card 2 Ends  *****  -->
+
+            <!--  *****  Card 3 Starts  *****  -->
+            <div class="item development">
+                <img src="assets/img/gallery/gallery3.png">
+                <div class="overlay">
+                    <a href="gallery.html">VIEW MORE</a>
+                </div>
+            </div>
+            <!--  *****  Card 3 Ends  *****  -->
+
+            <!--  *****  Card 4 Starts  *****  -->
+            <div class="item development">
+                <img src="assets/img/gallery/gallery4.png">
+                <div class="overlay">
+                    <a href="gallery.html">VIEW MORE</a>
+                </div>
+            </div>
+            <!--  *****  Card 4 Ends  *****  -->
+
+            <!--  *****  Card 5 Starts  *****  -->
+            <div class="item development">
+                <img src="assets/img/gallery/gallery5.png">
+                <div class="overlay">
+                    <a href="gallery.html">VIEW MORE</a>
+                </div>
+            </div>
+            <!--  *****  Card 5 Ends  *****  -->
+
+            <!--  *****  Card 6 Starts  *****  -->
+            <div class="item logo">
+                <img src="assets/img/gallery/blog2.png">
+                <div class="overlay">
+                    <a href="gallery.html">VIEW MORE</a>
+                </div>
+            </div>
+            <!--  *****  Card 6 Ends  *****  -->
+
+        </div>
+        <!--  *****  Gallery Section Ends  *****  -->
+
+    </main>
+
+</section>
+
+
+
+
+
+
+
 
 
 
@@ -615,137 +623,98 @@
 
 <!-------------------👀Testimonial start------------------------------------------------------------------------------------->
 
+<div class="section-testimonial">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2 style="font-size:40px;" class="one">Testimonial</h2>
+                    <p style="color: yellow; font-size:18px;">What Makes Us Their Choice</p>
 
-<div style="margin-top: 100px;" class="section-testimonial">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading">
-                        <h2 class="one">Testimonial</h2>
-                        <p style="color: yellow; font-size:18px;">What Makes Us Their Choice</p>
-
-                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="owl-carousel client-testimonial-carousel">
-                        <div class="single-testimonial-item">
-                            <p class="one">The gym offers equipment for cardio and strength training. Facilities are clean, staff is friendly, and there are many fitness classes.</p>
-                            <h3 class="one">Sowmya S M</h3>
-                        </div>
-                        <div class="single-testimonial-item">
-                            <p class="one">Spacious gym with safe equipment for strength training. It includes HIIT, cardio, powerlifting, and Zumba, all at fair prices.</p>
-                            <h3 class="one">Aswathy Prakash</h3>
-                        </div>
-                        <div class="single-testimonial-item">
-                            <p class="one">One of the best gyms in Trivandrum with hygienic space. Trainers build confidence and focus on proper technique effectively.</p>
-                            <h3 class="one">NITHYA SJ</span></h3>
-                        </div>
-                        <div class="single-testimonial-item">
-                            <p class="one">Best gym in Trivandrum with friendly staff and trainers. Equipment is great, and the membership fee is very affordable.</p>
-                            <h3 class="one">Diejo Domison</h3>
-                        </div>
-                        <div class="single-testimonial-item">
-                            <p class="one">The gym is spacious and fully enclosed for privacy. Ideal for introverts seeking a comfortable and secure workout space.</p>
-                            <h3 class="one">Abhìjíth Jîthu</h3>
-                        </div>
-                        <div class="single-testimonial-item">
-                            <p class="one">A good gym with new machines and skilled trainers. My weight loss journey here has been rewarding and successful.</p>
-                            <h3 class="one">Sreejitha Nair</span></h3>
-                        </div>
-                        <div class="single-testimonial-item">
-                            <p class="one">A gym near Peroorkada with a wide variety of equipment. Membership is affordable, and the gym opens early till late.</p>
-                            <h3 class="one">Liveup Young</span></h3>
-                        </div>
-                        
-                        <div class="single-testimonial-item">
-                            <p class="one">A great place to work out with a positive atmosphere. Fees are fair, and there is plenty of space and equipment.</p>
-                            <h3 class="one">Sooraj Kumar</h3>
-                        </div>
-                        <div class="single-testimonial-item">
-                            <p class="one">A nice gym with a unique ambiance and great trainers. It’s well-maintained, friendly, and offers excellent services.</p>
-                            <h3 class="one">M RUDRA DEEP</h3>
-                        </div>
-                        <div class="single-testimonial-item">
-                            <p class="one">A great gym with trainers providing personalized plans. The atmosphere is fantastic, and the experience is satisfying.</p>
-                            <h3 class="one">SOORAJ RADHAKRISHNAN</h3>
-                        </div>
-                        <div class="single-testimonial-item">
-                            <p class="one">A good gym with all equipment and amenities needed. It also has ample parking, making it convenient for members.</p>
-                            <h3 class="one">akash mnair</h3>
-                        </div>
-                        <div class="single-testimonial-item">
-                            <p class="one">Clean gym with trainers designing personalized workouts. The environment is welcoming, and I’m excited about results.</p>
-                            <h3 class="one">Prem Jacob</h3>
-                        </div>
-                        <div class="single-testimonial-item">
-                            <p class="one">A spacious gym with various machines and free weights. Perfect for those needing space and complete workout options.</p>
-                            <h3 class="one">DEEPAK .P.P</span></h3>
-                        </div>
-                        <div class="single-testimonial-item">
-                            <p class="one">A good gym with helpful trainers focused on progress. Their support creates a positive and productive environment.</p>
-                            <h3 class="one">clyde fernandez</span></h3>
-                        </div>
-                        <div class="single-testimonial-item">
-                            <p class="one">The best gym in Trivandrum with the most efficient and dedicated trainers. Their expertise ensures that every member gets the best results possible.</p>
-                            <h3 class="one">dileep kumar</span></h3>
-                        </div>
-                        <div class="single-testimonial-item">
-                            <p class="one">Best gym in Trivandrum with efficient and skilled trainers. Members get expert guidance to achieve their fitness goals.</p>
-                            <h3 class="one">Sujay S.B</span></h3>
-                        </div>
-                        <div class="single-testimonial-item">
-                            <p class="one">Plenty of machines and equipment available at fair prices. Trainers are skilled, and the facility is clean and organized.</p>
-                            <h3 class="one">origin687</span></h3>
-                        </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="owl-carousel client-testimonial-carousel">
+                    <div class="single-testimonial-item">
+                        <p class="one">The gym offers equipment for cardio and strength training. Facilities are clean, staff is friendly, and there are many fitness classes.</p>
+                        <h3 class="one">Sowmya S M</h3>
+                    </div>
+                    <div class="single-testimonial-item">
+                        <p class="one">Spacious gym with safe equipment for strength training. It includes HIIT, cardio, powerlifting, and Zumba, all at fair prices.</p>
+                        <h3 class="one">Aswathy Prakash</h3>
+                    </div>
+                    <div class="single-testimonial-item">
+                        <p class="one">One of the best gyms in Trivandrum with hygienic space. Trainers build confidence and focus on proper technique effectively.</p>
+                        <h3 class="one">NITHYA SJ</span></h3>
+                    </div>
+                    <div class="single-testimonial-item">
+                        <p class="one">Best gym in Trivandrum with friendly staff and trainers. Equipment is great, and the membership fee is very affordable.</p>
+                        <h3 class="one">Diejo Domison</h3>
+                    </div>
+                    <div class="single-testimonial-item">
+                        <p class="one">The gym is spacious and fully enclosed for privacy. Ideal for introverts seeking a comfortable and secure workout space.</p>
+                        <h3 class="one">Abhìjíth Jîthu</h3>
+                    </div>
+                    <div class="single-testimonial-item">
+                        <p class="one">A good gym with new machines and skilled trainers. My weight loss journey here has been rewarding and successful.</p>
+                        <h3 class="one">Sreejitha Nair</span></h3>
+                    </div>
+                    <div class="single-testimonial-item">
+                        <p class="one">A gym near Peroorkada with a wide variety of equipment. Membership is affordable, and the gym opens early till late.</p>
+                        <h3 class="one">Liveup Young</span></h3>
+                    </div>
+                    
+                    <div class="single-testimonial-item">
+                        <p class="one">A great place to work out with a positive atmosphere. Fees are fair, and there is plenty of space and equipment.</p>
+                        <h3 class="one">Sooraj Kumar</h3>
+                    </div>
+                    <div class="single-testimonial-item">
+                        <p class="one">A nice gym with a unique ambiance and great trainers. It’s well-maintained, friendly, and offers excellent services.</p>
+                        <h3 class="one">M RUDRA DEEP</h3>
+                    </div>
+                    <div class="single-testimonial-item">
+                        <p class="one">A great gym with trainers providing personalized plans. The atmosphere is fantastic, and the experience is satisfying.</p>
+                        <h3 class="one">SOORAJ RADHAKRISHNAN</h3>
+                    </div>
+                    <div class="single-testimonial-item">
+                        <p class="one">A good gym with all equipment and amenities needed. It also has ample parking, making it convenient for members.</p>
+                        <h3 class="one">akash mnair</h3>
+                    </div>
+                    <div class="single-testimonial-item">
+                        <p class="one">Clean gym with trainers designing personalized workouts. The environment is welcoming, and I’m excited about results.</p>
+                        <h3 class="one">Prem Jacob</h3>
+                    </div>
+                    <div class="single-testimonial-item">
+                        <p class="one">A spacious gym with various machines and free weights. Perfect for those needing space and complete workout options.</p>
+                        <h3 class="one">DEEPAK .P.P</span></h3>
+                    </div>
+                    <div class="single-testimonial-item">
+                        <p class="one">A good gym with helpful trainers focused on progress. Their support creates a positive and productive environment.</p>
+                        <h3 class="one">clyde fernandez</span></h3>
+                    </div>
+                    <div class="single-testimonial-item">
+                        <p class="one">The best gym in Trivandrum with the most efficient and dedicated trainers. Their expertise ensures that every member gets the best results possible.</p>
+                        <h3 class="one">dileep kumar</span></h3>
+                    </div>
+                    <div class="single-testimonial-item">
+                        <p class="one">Best gym in Trivandrum with efficient and skilled trainers. Members get expert guidance to achieve their fitness goals.</p>
+                        <h3 class="one">Sujay S.B</span></h3>
+                    </div>
+                    <div class="single-testimonial-item">
+                        <p class="one">Plenty of machines and equipment available at fair prices. Trainers are skilled, and the facility is clean and organized.</p>
+                        <h3 class="one">origin687</span></h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                items: 3,
-                autoplay: true,
-                margin: 30,
-                loop: true,
-                dots: true,
-                responsive: {
-                    0: { items: 1 },  /* Single item on small screens */
-                    768: { items: 2 }, /* Two items on medium screens */
-                    1024: { items: 3 } /* Three items on large screens */
-                }
-            });
-        });
-    </script>
+</div>
+</main>
+<!-------------------👀Testimonial end------------------------------------------------------------------------------------->
+  
         
-        
-    <!-------------------👀Testimonial end------------------------------------------------------------------------------------->
-        
-        
-        
-        
-    
-
-
-
-
-
-
-
-       
-    </main>
-
-
-
 
 <!-- Get In Touch Section Begin -->
 <div class="gettouch-section">
@@ -777,15 +746,10 @@
 </div>
 <!-- Get In Touch Section End -->
 
-
-
-
-
-
-
-    <footer>
+<!-----------------------------------footer-------------------------------------------------------->
+<footer>
         <!--? Footer Start-->
-        <div class="footer-area section-bg" data-background="assets/img/gallery/section_bg03.png">
+        <div style="background-color: black;" class="footer-area section-bg">
             <div class="container">
                 <div class="footer-top footer-padding">
                     <!-- Footer Menu -->
@@ -858,7 +822,7 @@
                         <div class="col-lg-12">
                             <div class="footer-copy-right text-center">
                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with 💌  by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i>  by <a href="https://colorlib.com" target="_blank">Colorlib</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                             </div>
                         </div>
@@ -913,6 +877,97 @@
     <!-- Jquery Plugins, main Jquery -->	
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
+
+
+<!-- BMI Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JavaScript -->
+<script>
+    function calculateBMI() {
+        const height = document.getElementById("height").value;
+        const weight = document.getElementById("weight").value;
+
+        if (height === "" || weight === "") {
+            document.getElementById("bmi-result").innerHTML = "Please enter both height and weight.";
+            return;
+        }
+
+        const heightInMeters = height / 100;
+        const bmi = (weight / (heightInMeters * heightInMeters)).toFixed(1);
+
+        let status = "";
+        if (bmi < 18.5) {
+            status = "Underweight";
+        } else if (bmi >= 18.5 && bmi <= 24.9) {
+            status = "Healthy";
+        } else if (bmi >= 25 && bmi <= 29.9) {
+            status = "Overweight";
+        } else {
+            status = "Obese";
+        }
+
+        document.getElementById("bmi-result").innerHTML = `Your BMI is ${bmi} (${status})`;
+    }
+</script>
+
+<!--About Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+<!--Trainers Bootstrap JS & jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<!--Testimonial JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            items: 3,
+            autoplay: true,
+            margin: 30,
+            loop: true,
+            dots: false,  // Set this to false to remove the dots
+            responsive: {
+                0: { items: 1 },  /* Single item on small screens */
+                768: { items: 2 }, /* Two items on medium screens */
+                1024: { items: 3 } /* Three items on large screens */
+            }
+        });
+    });
+    
+</script>
+
+
+
+
+<!--   *****   Isotope Filter Link   *****  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+<script type="text/javascript">
+    var $galleryContainer = $('.gallery').isotope({
+        itemSelector: '.item',
+          layoutMode: 'fitRows'
+    })
+
+    $('.button-group .button').on('click', function(){
+        $('.button-group .button').removeClass('active');
+        $(this).addClass('active');
+
+        var value = $(this).attr('data-filter');
+        $galleryContainer.isotope({
+            filter: value 
+        })
+    })
+</script>
+
+
+
     
     </body>
 </html>

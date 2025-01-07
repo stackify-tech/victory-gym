@@ -30,7 +30,7 @@
     <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48x48.png">
 
     
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<!-- CSS here -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -45,6 +45,8 @@
 	<link rel="stylesheet" href="assets/css/slick.css">
 	<link rel="stylesheet" href="assets/css/nice-select.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+
 
 
 </head>
@@ -134,25 +136,25 @@
                             <div class="icon-circle mb-3" style="border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
                                 <img src="assets/img/about/first.png" alt="Your Image Description" class="img-fluid"></div>
                             <h3 class="fit" style="color: yellow;">STATE-OF-THE-ART FITNESS EQUIPMENT</h3>
-                            <p style="color: white;">Discover the best in modern fitness technology with our cutting-edge gym machines designed to help you achieve your workout goals efficiently.</p>
+                            <p class="text-justify" style="color: white;">Discover cutting-edge gym machines designed to help you achieve your fitness goals efficiently.</p>
                         </div>
                         <div class="col-md-3">
                             <div class="icon-circle mb-3" style="border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
                                 <img src="assets/img/about/second.png" alt="Your Image Description" class="img-fluid"></div>
-                            <h3 class="fit" style="color: yellow;">PERSONALIZED NUTRITION PLANS FOR BETTER HEALTH</h3>
-                            <p style="color: white;">Work with our expert nutritionists to create a tailored meal plan that supports your fitness goals and promotes a healthier lifestyle.</p>
+                            <h3 class="fit" style="color: yellow;">PERSONALIZED NUTRITION PLANS FOR HEALTH</h3>
+                            <p class="text-justify" style="color: white;">Work with expert nutritionists to create tailored meal plans that promote a healthier lifestyle.</p>
                         </div>
                         <div class="col-md-3">
                             <div class="icon-circle mb-3" style="border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
                                 <img src="assets/img/about/third.png" alt="Your Image Description" class="img-fluid"></div>
                             <h3 class="fit" style="color: yellow;">EXPERT-LED GYM TRAINING FOR ALL LEVELS</h6>
-                            <p style="color: white;">Train with our certified fitness professionals who provide personalized workout programs to suit beginners and advanced athletes alike.</p>
+                            <p class="text-justify" style="color: white;">Train with certified professionals offering personalized workouts for all fitness levels.</p>
                         </div>
                         <div class="col-md-3">
                             <div class="icon-circle mb-3" style="border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
                                 <img src="assets/img/about/forth.png" alt="Your Image Description" class="img-fluid"></div>
-                            <h3 class="fit" style="color: yellow;">CUSTOMIZED FITNESS EXPERIENCE FOR TRANSFORMATION</h3>
-                            <p style="color: white;">Experience workouts uniquely crafted to align with your health goals, preferences, and fitness level for a truly transformative journey.
+                            <h3 class="fit" style="color: yellow;">CUSTOMIZED FITNESS EXPERIENCE FOR YOU</h3>
+                            <p class="text-justify" style="color: white;">Experience workouts crafted to match your health goals, preferences, and fitness level.
         
                             </p>
                         </div>
@@ -191,342 +193,20 @@
                 </div>
             </div>
         </div>
-    </section> <br><br><br>
+    </section> <br><br>
 
      <!-- About end👀 ----------------------------------------------------------->
 
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-
-
-
-
-
-    <!------------------------------------👀 BMI Calculator Section  start----------------------------------------->
-    
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="section-title">
-                    <h1 style="color: white;">BMI CALCULATOR CHART</h1>
-                    <h3 style="color: yellow;">UNDERSTAND YOUR BODY METRICS</h3>
-                </div>
-                <table class="table table-dark table-bordered">
-                    <thead>
-                        <tr>
-                            <th style="font-size: large;">BMI</th>
-                            <th style="font-size: large;">Weight Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="font-size:small;">Below 18.5</td>
-                            <td style="font-size:small;">Underweight</td>
-                        </tr>
-                        <tr>
-                            <td style="font-size:small;">18.5 - 24.9</td>
-                            <td style="font-size:small;">Healthy (Normal)</td>
-                        </tr>
-                        <tr>
-                            <td style="font-size:small;">25.0 - 29.9</td>
-                            <td style="font-size:small;">Overweight</td>
-                        </tr>
-                        <tr>
-                            <td style="font-size:small;">30.0 and Above</td>
-                            <td style="font-size:small;">Obese</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="section-title">
-                    <h1 style="color: white;">CALCULATE YOUR BMI</h1>
-                    <h3 style="color: yellow;">EVALUATE YOUR FITNESS</h3>
-                </div>
-                <div class="card p-4">
-                    <form id="bmi-form">
-                        <div>
-                        <div class="mb-3 calculator">
-                            <label for="height" class="form-label">Height (cm)</label>
-                            <input type="height" class="form-control" id="height" placeholder="your height">
-                        </div>
-                        <div class="mb-3 calculator">
-                            <label for="weight" class="form-label">Weight (kg)</label>
-                            <input type="weight" class="form-control" id="weight" placeholder="your weight">
-                        </div>
-                        <div class="mb-3 calculator">
-                            <label for="age" class="form-label">Age</label>
-                            <input type="number" class="form-control" id="age" placeholder="your age">
-                        </div>
-                        <div class="mb-3 calculator">
-                            <label for="sex" class="form-label">Sex</label>
-                            <select id="sex" class="form-select">
-                                <option value="" disabled selected>Select your sex</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="others">Others</option>
-                            </select>
-                        </div>
-                    </form><br><br><br>
-                    <button type="button" class="btn btn-calculate w-100" onclick="calculateBMI()">CALCULATE</button>
-                    <div class="mt-4 bmiresult">
-                        <h3 id="bmi-result" class="text-center resultbmi"></h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JavaScript -->
-    <script>
-        function calculateBMI() {
-            const height = document.getElementById("height").value;
-            const weight = document.getElementById("weight").value;
-
-            if (height === "" || weight === "") {
-                document.getElementById("bmi-result").innerHTML = "Please enter both height and weight.";
-                return;
-            }
-
-            const heightInMeters = height / 100;
-            const bmi = (weight / (heightInMeters * heightInMeters)).toFixed(1);
-
-            let status = "";
-            if (bmi < 18.5) {
-                status = "Underweight";
-            } else if (bmi >= 18.5 && bmi <= 24.9) {
-                status = "Healthy";
-            } else if (bmi >= 25 && bmi <= 29.9) {
-                status = "Overweight";
-            } else {
-                status = "Obese";
-            }
-
-            document.getElementById("bmi-result").innerHTML = `Your BMI is ${bmi} (${status})`;
-        }
-    </script>
-</div>
-
-<!------------------------------------👀 BMI Calculator Section end ----------------------------------------->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-<!---------------------👀FAQs start------------------------------------------------------------------>
-<section style="margin-top: 200px;">
-<h2 style="color:white; text-align:center; font-size:35px;" >Frequently Asked Questions</h2><br><br><br>
-    <div class="layout">
-        <div class="accordion">
-            <div class="accordion__question">
-                <p>What are your gym's operating hours?</p>
-
-            </div>
-            <div class="accordion__answer">
-                <p>Our gym is open from 5:00 AM to 10:00 PM on weekdays and 7:00 AM to 8:00 PM on weekends.</p>
-
-            </div>
-        </div>
-        <div class="accordion">
-            <div class="accordion__question">
-                <p>Do you offer personal training services?</p>
-
-            </div>
-            <div class="accordion__answer">
-                <p>
-                    Yes, we offer personal training sessions tailored to your fitness goals. Contact our front desk or visit our website to book a session.
-                </p>
-
-            </div>
-        </div>
-        <div class="accordion">
-            <div class="accordion__question">
-                <p>Are there any membership plans or trial passes available?</p>
-
-            </div>
-            <div class="accordion__answer">
-                <p>
-                    We have flexible membership plans (monthly, quarterly, and yearly) and a one-week trial pass for new members to explore our facilities.
-                </p>
-
-            </div>
-        </div>
-        <div class="accordion">
-            <div class="accordion__question">
-                <p>What facilities and equipment are available at the gym?</p>
-
-            </div>
-            <div class="accordion__answer">
-                <p>
-                    Our gym is equipped with a variety of cardio machines, strength training equipment, free weights, and functional training areas. We also have locker rooms, showers, and a dedicated yoga space
-                </p>
-
-            </div>
-        </div>
-        <div class="accordion">
-            <div class="accordion__question">
-                <p>Is there parking available at the gym?</p>
-
-            </div>
-            <div class="accordion__answer">
-                <p>
-                    Yes, we provide ample parking space for our members. Bicycle racks are also available for eco-friendly commuters.
-                </p>
-
-            </div>
-        </div>
-    </div>
-</section>
- 
-    <script>
-        let answers=document.querySelectorAll(".accordion");
-        answers.forEach((event)=>{
-            event.addEventListener('click',()=>{
-                if(event.classList.contains("active")){
-                    event.classList.remove("active");
-                }
-                else{
-                    event.classList.add("active");
-                }
-            })
-        })
-
-    </script>
-<!---------------------👀FAQs end------------------------------------------------------------------>
-
-
-
-
-
-<div style="background-color: black; padding-top:100px">
-    <div id="schedule">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="filters">
-                    <ul class="schedule-filter">
-                        <li class="active" data-tsfilter="monday" style="font-size: 20px;">Monday</li>
-                        <li data-tsfilter="tuesday" style="font-size: 20px;">Tuesday</li>
-                        <li data-tsfilter="wednesday" style="font-size: 20px;">Wednesday</li>
-                        <li data-tsfilter="thursday" style="font-size: 20px;">Thursday</li>
-                        <li data-tsfilter="friday" style="font-size: 20px;">Friday</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-10 offset-lg-1">
-                <div class="schedule-table filtering">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td class="day-time">Fitness Class</td>
-                                <td class="monday ts-item show" data-tsmeta="monday">10:00AM - 11:30AM</td>
-                                <td class="tuesday ts-item" data-tsmeta="tuesday">2:00PM - 3:30PM</td>
-                                <td>William G. Stewart</td>
-                            </tr>
-                            <tr>
-                                <td class="day-time">Muscle Training</td>
-                                <td class="friday ts-item" data-tsmeta="friday">10:00AM - 11:30AM</td>
-                                <td class="thursday ts-item" data-tsmeta="thursday">2:00PM - 3:30PM</td>
-                                <td>Paul D. Newman</td>
-                            </tr>
-                            <tr>
-                                <td class="day-time">Body Building</td>
-                                <td class="tuesday ts-item" data-tsmeta="tuesday">10:00AM - 11:30AM</td>
-                                <td class="monday ts-item show" data-tsmeta="monday">2:00PM - 3:30PM</td>
-                                <td>Boyd C. Harris</td>
-                            </tr>
-                            <tr>
-                                <td class="day-time">Yoga Training Class</td>
-                                <td class="wednesday ts-item" data-tsmeta="wednesday">10:00AM - 11:30AM</td>
-                                <td class="friday ts-item" data-tsmeta="friday">2:00PM - 3:30PM</td>
-                                <td>Hector T. Daigle</td>
-                            </tr>
-                            <tr>
-                                <td class="day-time">Advanced Training</td>
-                                <td class="thursday ts-item" data-tsmeta="thursday">10:00AM - 11:30AM</td>
-                                <td class="wednesday ts-item" data-tsmeta="wednesday">2:00PM - 3:30PM</td>
-                                <td>Bret D. Bowers</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-</div><br><br><br><br>
-
-    <script>
-        const filters = document.querySelectorAll('.schedule-filter li');
-        const scheduleItems = document.querySelectorAll('.ts-item');
-
-        filters.forEach(filter => {
-            filter.addEventListener('click', () => {
-                // Remove active class from all filters
-                filters.forEach(f => f.classList.remove('active'));
-                // Add active class to the clicked filter
-                filter.classList.add('active');
-
-                // Get the day to filter
-                const filterValue = filter.getAttribute('data-tsfilter');
-
-                // Show/Hide schedule items based on filter
-                scheduleItems.forEach(item => {
-                    if (item.getAttribute('data-tsmeta') === filterValue) {
-                        item.classList.add('show');
-                    } else {
-                        item.classList.remove('show');
-                    }
-                });
-            });
-        });
-    </script>
-
-
-
-
-
-
-
-
-
-
-
-
 <!-------------------👀Testimonial start------------------------------------------------------------------------------------->
 
-
-<div style="margin-top: 100px;" class="section-testimonial">
+<div class="section-testimonial">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="section-heading">
-                    <h2 style="font-size:35px;" class="one">Testimonial</h2>
-                    <p style="color: yellow; font-size:18px;">What Makes Us Their Choice</p>
+                    <h1 style="font-size:40px; color:yellow;">TESTIMONIALS</h2>
+                    <p style="color: white; font-size:18px;">What Makes Us Their Choice</p>
 
                 </div>
             </div>
@@ -608,53 +288,74 @@
         </div>
     </div>
 </div>
-
-<!-- JavaScript -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-            items: 3,
-            autoplay: true,
-            margin: 30,
-            loop: true,
-            dots: true,
-            responsive: {
-                0: { items: 1 },  /* Single item on small screens */
-                768: { items: 2 }, /* Two items on medium screens */
-                1024: { items: 3 } /* Three items on large screens */
-            }
-        });
-    });
-</script>
-    
-    
 <!-------------------👀Testimonial end------------------------------------------------------------------------------------->
-    
+<!--------------------------------------------faqs---------------------------------------------------->
 
+<div class=" container fatimes">
+    <div class="row">
+        <!-- FAQs Section -->
+        <div class="col-md-6 faq">
+        <h2 class="h2 mb-4">FAQs</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                <h4 class="accordion-header h4" id="faq1Header">
+                    What are the gym membership fees?
+                </h4>
+                </button>
+            <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1Header">
+                <div class="accordion-body">
+                <h5 class="h5">The membership fees start from $50 per month. Contact us for more details.</h5>
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                <h4 class="accordion-header h4" id="faq2Header">
+                    Do you offer personal training?
+                </h4>
+                </button>
+            <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2Header">
+                <div class="accordion-body">
+                <h5 class="h5">Yes, we offer personal training sessions. Please contact our front desk for pricing.</h5>
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                <h4 class="accordion-header h4" id="faq3Header">
+                    Are there shower facilities available?
+                </h4>
+                </button>
+            <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3Header">
+                <div class="accordion-body">
+                <h5 class="h5">Yes, we have clean and well-maintained shower facilities for our members.</h5>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
 
-
-
-
-      
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </main>
-
-
-
-
+        <!-- Time Schedule Section -->
+        <div class="col-md-6 schedule">
+        <h2 class="h2 mb-4">TIME SCHEDULES</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Monday: Morning 5 AM - 1 PM | Evening 3 PM - 10 PM</li>
+            <li class="list-group-item">Tuesday: Morning 5 AM - 1 PM | Evening 3 PM - 10 PM</li>
+            <li class="list-group-item">Wednesday: Morning 5 AM - 1 PM | Evening 3 PM - 10 PM</li>
+            <li class="list-group-item">Thursday: Morning 5 AM - 1 PM | Evening 3 PM - 10 PM</li>
+            <li class="list-group-item">Friday: Morning 5 AM - 1 PM | Evening 3 PM - 10 PM</li>
+            <li class="list-group-item">Saturday: Morning 5 AM - 1 PM | Evening 3 PM - 10 PM</li>
+        </ul>
+        </div>
+    </div>
+</div>
+  
+   
+  
+  
+  
+</main>
 <!-- Get In Touch Section Begin -->
 <div class="gettouch-section">
     <div class="container">
@@ -685,13 +386,10 @@
 </div>
 <!-- Get In Touch Section End -->
 
-
-
-
-
-    <footer>
+<!----------------------footer start-------------------------------------------------------------->
+<footer>
         <!--? Footer Start-->
-        <div class="footer-area section-bg" data-background="assets/img/gallery/section_bg03.png">
+        <div class="footer-area section-bg" style="background-color: black;">
             <div class="container">
                 <div class="footer-top footer-padding">
                     <!-- Footer Menu -->
@@ -818,6 +516,34 @@
     <!-- Jquery Plugins, main Jquery -->	
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
+
+
+    <!--About Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Testimonial JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            items: 3,
+            autoplay: true,
+            margin: 30,
+            loop: true,
+            dots: false,  // Set this to false to remove the dots
+            responsive: {
+                0: { items: 1 },  /* Single item on small screens */
+                768: { items: 2 }, /* Two items on medium screens */
+                1024: { items: 3 } /* Three items on large screens */
+            }
+        });
+    });
+    
+</script>
     
     </body>
 </html>

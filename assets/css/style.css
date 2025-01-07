@@ -205,6 +205,7 @@
 .one{
     
     color: white;
+	
 }
 
 .section-testimonial {
@@ -296,44 +297,63 @@
 
 
 
-/*------faqs-----------*/
+/*----------------faqs&schedule--------------------------*/
 
-.layout{
-    width: 1200px;
-    margin: auto;
-}
-.accordion{
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: white;
-    border-radius: 10px;
-}
-.accordion__question p{
-    margin: 5px;
-    padding: 0;
-    font-size: 15px;
-}
-.accordion__answer p{
-    margin: 5px;
-    padding: 10px;
-    font-size: 15px;
-    color: black;
-    background: yellow;
-    border-radius: 10px; 
-}
-.accordion:hover{
-    cursor: pointer;
-}
-.accordion__answer {
-    display: none;
-} 
-.accordion.active .accordion__answer {
-    display: block;
+  
+ .fatimes {
+	background-color: black;
+	padding-top: 20px;
+  }
+
+  .faq {
+	text-align: left;
+  }
+
+  .schedule {
+	text-align: right;
+	background-color: black; /* Set background color of the schedule to black */
+  }
+
+  .fatimes {
+	margin-top: 50px;
+	text-align: center;
+  }
+
+  .accordion-button {
+	background-color: black;
+	color: white;
+	border: 1px solid yellow;
+  }
+
+  .accordion-button:not(.collapsed) {
+	background-color: #444;
+	color: yellow;
+  }
+
+  .accordion-body {
+	background-color: #222;
+	color: white;
+  }
+
+.list-group-item {
+	background-color: black;
+	color: white;
+	border: 1px solid yellow; /* Adds a yellow border */
+	font-size: 16px;
+	padding: 10px;
 }
 
+.list-group-item:not(:last-child) {
+	border-bottom: 1px solid yellow; /* Adds a yellow line between rows, not on the last one */
+}
 
+.list-group-item:hover {
+	background-color: #444;
+}
 
+.accordion-item {
+	margin-bottom: 15px;
+}
 
 
 
@@ -510,7 +530,7 @@
 -----------------------*/
 
 .gettouch-section {
-	background: black;
+	background:rgb(12, 12, 12) ;
 	padding: 30px 0 15px;
 }
 
@@ -520,7 +540,7 @@
 }
 
 .gt-text i {
-	font-size: 30px;
+	font-size: 20px;
 	color: black;
 	display: inline-block;
 	height: 65px;
@@ -574,84 +594,6 @@
 	padding-top: 20px;
 }
 
-
-
-
-
-
-
-
-/*----------------------------shedule------------*/
-#schedule table {
-    width: 80%; /* Adjust the width to your preference, e.g., 80% of the parent container */
-    margin: 0 auto; /* Centers the table horizontally */
-    text-align: center;
-    border-collapse: collapse; /* Ensures clean borders */
-}
-
-#schedule table tbody tr {
-    border-bottom: 1px solid #ccc;
-}
-
-#schedule table tbody tr td {
-    border-right: 1px solid #ccc;
-    height: 100px;
-}
-
-#schedule table tr td {
-    color: #fff;
-    font-size: 15px;
-    text-transform: capitalize;
-    font-weight: 500;
-    letter-spacing: 0.25px;
-    border: 1px solid #ccc;
-}
-
-.schedule-table.filtering .ts-item {
-    opacity: 0;
-    transition: all 0.5s;
-}
-
-.schedule-table.filtering .ts-item.show {
-    opacity: 1;
-    transition: all 0.5s;
-}
-
-#schedule .filters {
-    margin-bottom: 40px;
-}
-
-#schedule .filters ul {
-    padding: 0;
-    text-align: center;
-}
-
-#schedule .filters ul li {
-    list-style: none;
-    display: inline;
-    cursor: pointer;
-    margin-right: 10px;
-    font-size: 15px;
-    font-weight: 500;
-    color: #fff;
-    text-transform: capitalize;
-    transition: all 0.3s ease-in-out;
-}
-
-#schedule .filters ul li:after {
-    content: "/";
-    margin-left: 10px;
-    color: #fff;
-}
-
-#schedule .filters ul li:last-child::after {
-    display: none;
-}
-
-#schedule .filters ul li.active,
-#schedule .filters ul li:hover {
-    color: yellow;
-}
 
 
 
@@ -2233,7 +2175,7 @@ padding-top:60px;padding-bottom:0
 
 }
 .footer-padding{
-padding-top:150px;padding-bottom:70px
+padding-top:100px;padding-bottom:50px
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
 .footer-padding{
@@ -2515,24 +2457,24 @@ height:550px
 
 }
 .slider-height2{
-height:450px;background-size:cover
-}
-@media only screen and (min-width: 768px) and (max-width: 991px){
-.slider-height2{
-height:350px
-}
-
-}
-@media only screen and (min-width: 576px) and (max-width: 767px){
-.slider-height2{
-height:260px
-}
-
-}
-@media (max-width: 575px){
-.slider-height2{
-height:260px
-}
+	height:320px;background-size:cover
+	}
+	@media only screen and (min-width: 768px) and (max-width: 991px){
+	.slider-height2{
+	height:280px
+	}
+	
+	}
+	@media only screen and (min-width: 576px) and (max-width: 767px){
+	.slider-height2{
+	height:230px
+	}
+	
+	}
+	@media (max-width: 575px){
+	.slider-height2{
+	height:230px
+	}
 
 }
 .slider-area2{
@@ -2704,7 +2646,7 @@ position:absolute;content:"";background-color:rgba(1,10,28,0.3);width:100%;heigh
 position:absolute;top:0;right:0;left:0;z-index:9
 }
 .slider-area2 .hero-cap h2{
-color:#fff;font-size:50px;font-weight:800;text-transform:capitalize;line-height:1
+color:#fff;font-size:50px;font-weight:800;text-transform:capitalize;line-height:1; 
 }
 @media only screen and (min-width: 576px) and (max-width: 767px){
 .slider-area2 .hero-cap h2{
@@ -3397,10 +3339,10 @@ border-top:1px solid #1f2024;padding-bottom:50px;padding-top:40px
 color:#c4c4c4;font-weight:300;font-size:16px;line-height:2;margin-bottom:12px
 }
 .footer-area .footer-bottom .footer-copy-right p i{
-color:#f04e3c
+color:white
 }
 .footer-area .footer-bottom .footer-copy-right p a{
-color:#f04e3c
+color:yellow
 }
 .footer-area .footer-bottom .footer-copy-right p a:hover{
 color:#fff
