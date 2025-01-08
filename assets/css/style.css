@@ -50,7 +50,12 @@
 .section-title {
     text-align: center;
     margin-bottom: 40px;
+	
 }
+
+.bmi, .cal {
+	padding: 30px; /* Add uniform padding to both sections */
+  }
 .section-title span {
     color: yellow;
     font-weight: bold;
@@ -180,24 +185,19 @@
 
 
 /* trainers ---------- */
-.trainer-image {
-    
-	border-radius: 15px; /* Rounded corners like a card */
-	width: 100%;
-	height: 100%; /* Adjust height */
-	object-fit: cover; /* Ensure the image covers the area */
-	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a card effect */
-}
-.row {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-.col-md-6 {
-	margin-bottom: 30px;
+.picture-box {
+	border: 2px solid #000; /* Adds a border around the pictures */
+	padding: 5px; /* Adds space between border and image */
+	margin: 10px; /* Adds space between pictures */
+	border-radius: 8px; /* Optional: rounds the corners of the border */
+	background-color: white;
 }
 
-
+.img-fluid {
+	width: 100%; /* Ensures the image scales properly */
+	height: auto;
+	border-radius: 5px; /* Optional: rounds the corners of the images */
+}
 
 
 /*testimonial*/
@@ -309,6 +309,10 @@
 	text-align: left;
   }
 
+  .faq, .schedule {
+	padding: 10px; /* Add uniform padding to both sections */
+  }
+
   .schedule {
 	text-align: right;
 	background-color: black; /* Set background color of the schedule to black */
@@ -379,11 +383,11 @@
 
 .contact-widget .cw-text i {
 	font-size: 25px;
-	color: yellow;
+	color: black;
 	display: inline-block;
 	height: 65px;
 	width: 65px;
-	background: #363636;
+	background: yellow;
 	border-radius: 50%;
 	line-height: 65px;
 	text-align: center;
@@ -2481,7 +2485,7 @@ height:550px
 background-image:url(../img/hero/hero2.png);background-repeat:no-repeat;background-size:cover
 }
 .slider-area{
-margin-top:-1px;background-image:url(../img/hero/h1_hero.png);background-repeat:no-repeat;background-position:top center;background-size:cover;background-attachment:fixed
+margin-top:-1px;background-image:url(../img/hero/h2_hero.png);background-repeat:no-repeat;background-position:top center;background-size:cover;background-attachment:fixed
 }
 .slider-area .hero__caption{
 overflow:hidden
