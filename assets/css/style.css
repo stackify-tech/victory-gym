@@ -77,13 +77,6 @@
 }
 
 
-
-
-
-
-
-
-
 /*------------------
   Pricing section
 ---------------------*/
@@ -183,21 +176,71 @@
 }
 
 
+/*trainers*/
 
-/* trainers ---------- */
-.picture-box {
-	border: 2px solid #000; /* Adds a border around the pictures */
-	padding: 5px; /* Adds space between border and image */
-	margin: 10px; /* Adds space between pictures */
-	border-radius: 8px; /* Optional: rounds the corners of the border */
-	background-color: white;
+
+.section-trainers {
+    padding: 80px 0;
+    background-color: #000;
 }
 
-.img-fluid {
-	width: 100%; /* Ensures the image scales properly */
-	height: auto;
-	border-radius: 5px; /* Optional: rounds the corners of the images */
+
+.sub-trainers-carousel button.owl-dot.active {
+    background: #000 !important;
+    width: 30px;
 }
+
+.sub-trainers-carousel .owl-dots {
+    text-align: center;
+    margin-top: 25px;
+}
+    
+
+.single-trainers-item{
+    position: relative;
+    box-shadow: 0 0 2px #dadfd3;
+    margin: 2px;
+    padding: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+/* Media Queries for Better Responsiveness */
+@media (max-width: 767px) {
+    .section-trainers {
+        padding: 50px 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*testimonial*/
@@ -218,36 +261,12 @@
     margin-bottom: 60px;
 }
 
-
-
 .section-borders span.black-border {
     background: white;
     width: 30px;
     margin: 0 6px;
 }
 
-
-
-.client-testimonial-carousel .owl-dots button {
-    height: 5px;
-    background: yellow!important;
-    width: 20px;
-    display: inline-block;
-    margin: 5px;
-    transition: .2s;
-    border-radius: 2px;
-}
-
-.client-testimonial-carousel button.owl-dot.active {
-    background: #000 !important;
-    width: 30px;
-}
-
-.client-testimonial-carousel .owl-dots {
-    text-align: center;
-    margin-top: 25px;
-}
-    
 
 .single-testimonial-item {
     position: relative;
@@ -294,6 +313,39 @@
         left: 40px;
     }
 }
+
+
+.single-testimonial-item {
+    height: 180px; /* Adjust this value to suit your design */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.single-testimonial-item p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Show only 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    font-size: 14px; /* Adjust the font size as needed */
+	text-align: justify;
+}
+
+.single-testimonial-item h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tt-rating {
+    text-align: center;
+}
+
+
 
 
 
@@ -611,7 +663,6 @@
 
 
 
-
 /* index section */
 
 
@@ -885,13 +936,29 @@ transform:scaleY(1);border:1px solid transparent
 .breadcrumb>.active{
 color:black
 }
-#scrollUp,#back-top{
-background:yellow;height:50px;width:50px;right:31px;bottom:18px;position:fixed;color:white;font-size:20px;text-align:center;border-radius:50%;line-height:48px;border:2px solid transparent;box-shadow:0 0 10px 3px rgba(5, 1, 1, 0.2)
+#scrollUp, #back-top {
+    background: yellow;
+    height: 50px;
+    width: 50px;
+    right: 31px;
+    bottom: 18px;
+    position: fixed;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 48px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px 3px rgba(5, 1, 1, 0.2);
+    z-index: 9999; /* Add this to ensure it's above other elements */
 }
-@media (max-width: 575px){
-#scrollUp,#back-top{
-right:16px
+
+@media (max-width: 575px) {
+    #scrollUp, #back-top {
+        right: 16px;
+    }
 }
+
 
 }
 #scrollUp a i,#back-top a i{
@@ -2281,7 +2348,8 @@ font-size:26px
 
 }
 .section-bg{
-background-size:cover;background-repeat:no-repeat;background-position:center center;background-attachment:fixed
+background-size:cover;
+background-repeat:no-repeat;background-position:center center;background-attachment:fixed;  background-size: cover;
 }
 .white-bg{
 background:#ffffff
@@ -2485,8 +2553,14 @@ height:550px
 background-image:url(../img/hero/hero2.png);background-repeat:no-repeat;background-size:cover
 }
 .slider-area{
-margin-top:-1px;background-image:url(../img/hero/h2_hero.png);background-repeat:no-repeat;background-position:top center;background-size:cover;background-attachment:fixed
+margin-top:-1px;background-image:url(../img/hero/h3_hero.jpg);background-repeat:no-repeat;background-position:top center;background-size:cover; background-attachment: scroll; /* Adjust for mobile devices */
 }
+
+@media only screen and (min-width: 992px) {
+	.slider-area {
+	  background-attachment: fixed; /* Re-enable fixed effect for larger screens */
+	}
+  }
 .slider-area .hero__caption{
 overflow:hidden
 }

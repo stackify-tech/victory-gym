@@ -115,7 +115,7 @@
     </header>
     <main>
         <!--? slider Area Start-->
-        <div class="slider-area position-relative">
+        <div style="margin-top: -50px;" class="slider-area position-relative">
             <div class="slider-active">
                 <!-- Single Slider -->
                 <div class="single-slider slider-height d-flex align-items-center">
@@ -154,89 +154,6 @@
         <!-- slider Area End-->
 
 
-<!------------------------------------👀 BMI Calculator Section  start----------------------------------------->
-
-<div style="background-color: black;">
-<div class="container py-5">
-        <div style="margin-top: 100px; text-align:center" class="section-tittle section-tittle2">
-            <h2>KNOW YOUR BODY MASS INDEX (BMI) | YOUR FITNESS STARTS HERE...</h2>
-        </div>
-    <div style="margin-top: 40px;" class="row">
-        <div class="col-lg-6 bmi">
-            <div class="section-title">
-                <h1 style="color: white;">BMI CALCULATOR CHART</h1>
-                <h3 style="color: yellow;">UNDERSTAND YOUR BODY METRICS</h3>
-            </div>
-            <table class="table table-dark table-bordered">
-                <thead>
-                    <tr>
-                        <th style="font-size: large;">BMI</th>
-                        <th style="font-size: large;">Weight Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="font-size:small;">Below 18.5</td>
-                        <td style="font-size:small;">Underweight</td>
-                    </tr>
-                    <tr>
-                        <td style="font-size:small;">18.5 - 24.9</td>
-                        <td style="font-size:small;">Healthy (Normal)</td>
-                    </tr>
-                    <tr>
-                        <td style="font-size:small;">25.0 - 29.9</td>
-                        <td style="font-size:small;">Overweight</td>
-                    </tr>
-                    <tr>
-                        <td style="font-size:small;">30.0 and Above</td>
-                        <td style="font-size:small;">Obese</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="col-lg-6 cal">
-            <div class="section-title">
-                <h1 style="color: white;">CALCULATE YOUR BMI</h1>
-                <h3 style="color: yellow;">EVALUATE YOUR FITNESS</h3>
-            </div>
-            <div class="card p-4">
-                <form id="bmi-form">
-                    <div>
-                    <div class="mb-3 calculator">
-                        <label for="height" class="form-label">Height (cm)</label>
-                        <input type="height" class="form-control" id="height" placeholder="your height">
-                    </div>
-                    <div class="mb-3 calculator">
-                        <label for="weight" class="form-label">Weight (kg)</label>
-                        <input type="weight" class="form-control" id="weight" placeholder="your weight">
-                    </div>
-                    <div class="mb-3 calculator">
-                        <label for="age" class="form-label">Age</label>
-                        <input type="number" class="form-control" id="age" placeholder="your age">
-                    </div>
-                    <div class="mb-3 calculator">
-                        <label for="sex" class="form-label">Sex</label>
-                        <select id="sex" class="form-select">
-                            <option value="" disabled selected>Select your sex</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="others">Others</option>
-                        </select>
-                    </div>
-                </form><br><br><br>
-                <button type="button" class="btn btn-calculate w-100" onclick="calculateBMI()">CALCULATE</button>
-                <div class="mt-4 bmiresult">
-                    <h3  id="bmi-result" class="text-center resultbmi"></h3>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-
-<!------------------------------------👀 BMI Calculator Section end ----------------------------------------->
 
 <!-- About start 👀----------------------------------------------------------->
 
@@ -246,38 +163,46 @@
             <section   class="text-center py-5">
                 <h1 style="margin-top: 30px; font-size:50px" class="text-warning">WHY CHOOSE OUR PREMIUM GYM?</h1> <br>
                 <h2 style="color: white;" class="fw-bold">TRANSFORM YOUR FITNESS JOURNEY WITH US</h2><br><br>
-                <div class="container mt-4">
-                    <div class="row">
+                <div class="container">
+                    <div class="row text-center">
+                        <!-- Block 1 -->
                         <div class="col-md-3">
                             <div class="icon-circle mb-3" style="border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
-                                <img src="assets/img/about/first.png" alt="Your Image Description" class="img-fluid"></div>
+                                <img src="assets/img/about/first.png" alt="State-of-the-Art Fitness Equipment" class="img-fluid">
+                            </div>
                             <h3 class="fit" style="color: yellow;">STATE-OF-THE-ART FITNESS EQUIPMENT</h3>
-                            <p class="text-justify" style="color: white;">Discover gym machines designed to meet your fitness goals with ease and efficiency. Built with cutting-edge technology, they ensure safety and performance.
-                            </p>
+                            <p style="color: white;">Discover gym machines designed to meet your fitness goals with ease and efficiency. Built with cutting-edge technology, they ensure safety and performance.</p>
                         </div>
+                
+                        <!-- Block 2 -->
                         <div class="col-md-3">
                             <div class="icon-circle mb-3" style="border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
-                                <img src="assets/img/about/second.png" alt="Your Image Description" class="img-fluid"></div>
+                                <img src="assets/img/about/second.png" alt="Personalized Nutrition Plans" class="img-fluid">
+                            </div>
                             <h3 class="fit" style="color: yellow;">PERSONALIZED NUTRITION PLANS FOR HEALTH</h3>
-                            <p class="text-justify" style="color: white;">Work with expert nutritionists to create meal plans tailored to your dietary needs and health goals. Enjoy balanced, sustainable meals designed to improve your overall well-being.
-                            </p>
+                            <p style="color: white;">Work with expert nutritionists to create meal plans tailored to your dietary needs and health goals. Enjoy balanced, sustainable meals designed to improve your overall well-being.</p>
                         </div>
+                
+                        <!-- Block 3 -->
                         <div class="col-md-3">
                             <div class="icon-circle mb-3" style="border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
-                                <img src="assets/img/about/third.png" alt="Your Image Description" class="img-fluid"></div>
-                            <h3 class="fit" style="color: yellow;">EXPERT-LED GYM TRAINING FOR ALL LEVELS</h6>
-                            <p class="text-justify" style="color: white;">Train with certified professionals offering personalized workouts for beginners to advanced athletes. Gain confidence with proper technique guidance and tailored routines.</p>
+                                <img src="assets/img/about/third.png" alt="Expert-Led Gym Training" class="img-fluid">
+                            </div>
+                            <h3 class="fit" style="color: yellow;">EXPERT-LED GYM TRAINING FOR ALL LEVELS</h3>
+                            <p style="color: white;">Train with certified professionals offering personalized workouts for beginners to advanced athletes. Gain confidence with proper technique guidance and tailored routines.</p>
                         </div>
+                
+                        <!-- Block 4 -->
                         <div class="col-md-3">
                             <div class="icon-circle mb-3" style="border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
-                                <img src="assets/img/about/forth.png" alt="Your Image Description" class="img-fluid"></div>
+                                <img src="assets/img/about/forth.png" alt="Customized Fitness Experience" class="img-fluid">
+                            </div>
                             <h3 class="fit" style="color: yellow;">CUSTOMIZED FITNESS EXPERIENCE FOR YOU</h3>
-                            <p class="text-justify" style="color: white;">Enjoy workouts designed to match your health goals, preferences, and fitness level for optimal results. Every session is crafted to keep you motivated and on track.
-        
-                            </p>
+                            <p style="color: white;">Enjoy workouts designed to match your health goals, preferences, and fitness level for optimal results. Every session is crafted to keep you motivated and on track.</p>
                         </div>
                     </div>
                 </div>
+                
             </section>
 
 
@@ -310,11 +235,96 @@
                     </div>
                 </div>
             </div>
-            <a href="from.html" class="btn">Become a Fitness Insider</a>
         </div>
     </section>
 
      <!-- About end👀 ----------------------------------------------------------->
+
+
+     <!------------------------------------👀 BMI Calculator Section  start----------------------------------------->
+
+<div style="background-color: black;">
+    <div class="container py-5">
+            <div style="margin-top: 50px; text-align:center" class="section-tittle section-tittle2">
+                <h1 style="font-size: 40px; color:yellow;">KNOW YOUR BODY MASS INDEX (BMI) | YOUR FITNESS STARTS HERE...</h1>
+            </div>
+        <div style="margin-top: 40px;" class="row">
+            <div class="col-lg-6 bmi">
+                <div class="section-title">
+                    <h1 style="color: white;">BMI CALCULATOR CHART</h1>
+                    <h3 style="color: yellow;">UNDERSTAND YOUR BODY METRICS</h3>
+                </div>
+                <table class="table table-dark table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="font-size: large;">BMI</th>
+                            <th style="font-size: large;">Weight Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="font-size:small;">Below 18.5</td>
+                            <td style="font-size:small;">Underweight</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:small;">18.5 - 24.9</td>
+                            <td style="font-size:small;">Healthy (Normal)</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:small;">25.0 - 29.9</td>
+                            <td style="font-size:small;">Overweight</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:small;">30.0 and Above</td>
+                            <td style="font-size:small;">Obese</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="col-lg-6 cal">
+                <div class="section-title">
+                    <h1 style="color: white;">CALCULATE YOUR BMI</h1>
+                    <h3 style="color: yellow;">EVALUATE YOUR FITNESS</h3>
+                </div>
+                <div class="card p-4">
+                    <form id="bmi-form">
+                        <div>
+                        <div class="mb-3 calculator">
+                            <label for="height" class="form-label">Height (cm)</label>
+                            <input type="height" class="form-control" id="height" placeholder="your height">
+                        </div>
+                        <div class="mb-3 calculator">
+                            <label for="weight" class="form-label">Weight (kg)</label>
+                            <input type="weight" class="form-control" id="weight" placeholder="your weight">
+                        </div>
+                        <div class="mb-3 calculator">
+                            <label for="age" class="form-label">Age</label>
+                            <input type="number" class="form-control" id="age" placeholder="your age">
+                        </div>
+                        <div class="mb-3 calculator">
+                            <label for="sex" class="form-label">Sex</label>
+                            <select id="sex" class="form-select">
+                                <option value="" disabled selected>Select your sex</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </div>
+                    </form><br><br><br>
+                    <button type="button" class="btn btn-calculate w-100" onclick="calculateBMI()">CALCULATE</button>
+                    <div class="mt-4 bmiresult">
+                        <h3  id="bmi-result" class="text-center resultbmi"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    <!------------------------------------👀 BMI Calculator Section end ----------------------------------------->
+    
 
 <!--? Services Area Start -------------------------------------------------------------------------->
         
@@ -496,35 +506,36 @@
                 </div>
             </div>
         </section>
-        
-        <!--trainers Team Ara Start ------------------------------------------------------->
-         
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <!-- Each image is placed inside a Bootstrap column class that is responsive -->
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="picture-box">
-                        <img src="assets/img/trainers/trainer1.jpg" alt="Trainer 1" class="img-fluid">
+
+
+<!--trainers Team Ara Start ---------------------------------------------------------------------------->
+
+<div class="section-trainers">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="owl-carousel sub-trainers-carousel">
+                    <div class="single-trainers-item">
+                        <img src="assets/img/trainers/trainer1.jpg" alt="">
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="picture-box">
-                        <img src="assets/img/trainers/trainer2.jpg" alt="Trainer 2" class="img-fluid">
+                    <div class="single-trainers-item">
+                        <img src="assets/img/trainers/trainer2.jpg" alt="">
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="picture-box">
-                        <img src="assets/img/trainers/trainer3.jpg" alt="Trainer 3" class="img-fluid">
+                    <div class="single-trainers-item">
+                        <img src="assets/img/trainers/trainer3.jpg" alt="">
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="picture-box">
-                        <img src="assets/img/trainers/trainer4.jpg" alt="Trainer 4" class="img-fluid">
+                    <div class="single-trainers-item">
+                        <img src="assets/img/trainers/trainer4.jpg" alt="">
+                        
                     </div>
+                    
                 </div>
             </div>
         </div>
-        <!-- Team Ara End ---------------------------------------------------------------------------------->
+    </div>
+
+</div>
+<!-- Team Ara End ---------------------------------------------------------------------------------->
 
 
 
@@ -532,7 +543,7 @@
 <!-----------------------------------------------gallery-------------------------------------------------->
 
 
-<section style="margin-top: 100px;" class="portfolio">
+<section  class="portfolio">
 	
     <header class="section-head">
         <h1 style="font-size: 50px;">WHERE FITNESS COMES ALIVE</h1>
@@ -905,15 +916,14 @@
             <div class="col-md-4">
                 <div class="gt-text">
                     <i class="fa fa-map-marker"></i>
-                    <p>333 Middle Winchendon Rd, Rindge,<br/> NH 03461</p>
+                    <p>Victory Fitness, AKG NAGAR ROAD, Peroorkkada, Thiruvananthapuram -  695005 (Opposite SBI)</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="gt-text">
                     <i class="fa fa-mobile"></i>
                     <ul>
-                        <li>125-711-811</li>
-                        <li>125-668-886</li>
+                        <li style="font-size: 15px;">07947145650</li>
                     </ul>
                 </div>
             </div>
