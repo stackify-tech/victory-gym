@@ -217,32 +217,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*testimonial*/
 
 .one{
@@ -499,8 +473,6 @@
 
 
 
-
-
 .leave-comment h5 {
 	font-size: 20px;
 	color: #ffffff;
@@ -581,75 +553,72 @@
 
 
 
-/*---------------------
-  Get Touch Section
------------------------*/
+/*--------------------- Get Touch Section -----------------------*/
 
 .gettouch-section {
-	background:rgb(12, 12, 12) ;
-	padding: 30px 0 15px;
+    background: rgb(12, 12, 12);
+    padding: 20px 0 10px;  /* Reduced top and bottom padding */
 }
 
 .gt-text {
-	overflow: hidden;
-	margin-bottom: 30px;
+    overflow: hidden;
+    margin-bottom: 20px;  /* Reduced margin between items */
 }
 
 .gt-text i {
-	font-size: 20px;
-	color: black;
-	display: inline-block;
-	height: 65px;
-	width: 65px;
-	background: yellow;
-	border-radius: 50%;
-	line-height: 65px;
-	text-align: center;
-	float: left;
-	margin-right: 20px;
+    font-size: 18px;  /* Reduced icon size */
+    color: black;
+    display: inline-block;
+    height: 50px;  /* Reduced height */
+    width: 50px;   /* Reduced width */
+    background: yellow;
+    border-radius: 50%;
+    line-height: 50px;  /* Adjusted to center the icon */
+    text-align: center;
+    float: left;
+    margin-right: 15px;  /* Reduced space between icon and text */
 }
 
 .gt-text p {
-	overflow: hidden;
-	color: #ffffff;
-	margin-bottom: 0;
-	padding-top: 10px;
+    overflow: hidden;
+    color: #ffffff;
+    margin-bottom: 0;
+    padding-top: 8px;  /* Reduced padding */
 }
 
 .gt-text ul {
-	overflow: hidden;
-	padding-top: 20px;
+    overflow: hidden;
+    padding-top: 12px;  /* Reduced padding */
 }
 
 .gt-text ul li {
-	list-style: none;
-	font-size: 14px;
-	color: #ffffff;
-	margin-right: 25px;
-	display: inline-block;
-	position: relative;
+    list-style: none;
+    font-size: 13px;  /* Reduced font size */
+    color: #ffffff;
+    margin-right: 20px;  /* Reduced space between items */
+    display: inline-block;
+    position: relative;
 }
 
 .gt-text ul li:after {
-	position: absolute;
-	right: -18px;
-	top: 0;
-	content: "|";
-	color: black;
+    position: absolute;
+    right: -15px;
+    top: 0;
+    content: "|";
+    color: black;
 }
 
 .gt-text ul li:last-child {
-	margin-right: 0;
+    margin-right: 0;
 }
 
 .gt-text ul li:last-child:after {
-	display: none;
+    display: none;
 }
 
 .gt-text.email p {
-	padding-top: 20px;
+    padding-top: 15px;  /* Reduced padding */
 }
-
 
 
 
