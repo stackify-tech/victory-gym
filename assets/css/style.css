@@ -217,6 +217,85 @@
 
 
 
+/*---faqs---*/
+.faqs {
+    padding: 0 10rem;
+    padding-top: 5rem;
+}
+
+.free {
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.accordion {
+    background-color: black;
+    color: #595656;
+    cursor: pointer;
+    padding: 18px;
+    margin: 10px 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.open,
+.accordion:hover {
+    background-color:black;
+    border: 1px dashed yellow;
+    color: yellow;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.open:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: black;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: max-height 0.2s ease-out;
+}
+
+@media (max-width: 768px) {
+    .faqs {
+        padding: 0 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .accordion {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 /*testimonial*/
 
 .one{
@@ -319,71 +398,6 @@
     text-align: center;
 }
 
-
-
-
-
-/*----------------faqs&schedule--------------------------*/
-
-  
- .fatimes {
-	background-color: black;
-	padding-top: 20px;
-  }
-
-  .faq {
-	text-align: left;
-  }
-
-  .faq, .schedule {
-	padding: 10px; /* Add uniform padding to both sections */
-  }
-
-  .schedule {
-	text-align: right;
-	background-color: black; /* Set background color of the schedule to black */
-  }
-
-  .fatimes {
-	margin-top: 50px;
-	text-align: center;
-  }
-
-  .accordion-button {
-	background-color: black;
-	color: white;
-	border: 1px solid yellow;
-  }
-
-  .accordion-button:not(.collapsed) {
-	background-color: #444;
-	color: yellow;
-  }
-
-  .accordion-body {
-	background-color: #222;
-	color: white;
-  }
-
-.list-group-item {
-	background-color: black;
-	color: white;
-	border: 1px solid yellow; /* Adds a yellow border */
-	font-size: 16px;
-	padding: 10px;
-}
-
-.list-group-item:not(:last-child) {
-	border-bottom: 1px solid yellow; /* Adds a yellow line between rows, not on the last one */
-}
-
-.list-group-item:hover {
-	background-color: #444;
-}
-
-.accordion-item {
-	margin-bottom: 15px;
-}
 
 
 
@@ -929,7 +943,6 @@ color:black
 }
 
 
-}
 #scrollUp a i,#back-top a i{
 display:block;line-height:50px
 }
@@ -2254,7 +2267,7 @@ margin-bottom:50px
 
 }
 .section-tittle span{
-font-family:"Teko",sans-serif;font-size:24px;font-weight:300;margin-left:72px;margin-bottom:22px;color:black;text-transform:uppercase;display:inline-block;position:relative
+font-family:"Teko",sans-serif;font-size:13px;margin-left:72px;margin-bottom:22px;color:rgb(37, 36, 36);text-transform:uppercase;display:inline-block;position:relative
 }
 @media (max-width: 575px){
 .section-tittle span{
