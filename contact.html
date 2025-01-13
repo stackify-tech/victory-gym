@@ -149,12 +149,13 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="leave-comment">
-                        <form action="contact_process.php" method="POST">
+                        <form id="my-form" action="https://formspree.io/f/xeoonjdd" method="POST">
                             <input type="text" name="name" placeholder="Name" required>
                             <input type="email" name="email" placeholder="Email" title="Please enter a valid email address" required>
                             <input type="tel" name="number" placeholder="Phone Number" pattern="\d{10}" title="Enter a valid 10-digit number" required>
                             <textarea name="message" placeholder="Comment" required></textarea>
-                            <button type="submit" class="btn btn-calculate w-100">SUBMIT</button>
+                            <button type="submit" class="btn btn-calculate w-100" id="my-form-button">SUBMIT</button>
+                            <p class="text-success" id="my-form-status"></p>
                         </form>
                     </div>
                 </div>
@@ -311,7 +312,40 @@
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
 
-
+    <script>
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+            
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    status.innerHTML = "Thanks for your submission!";
+                    form.reset();
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+                        } else {
+                            status.innerHTML = "Oops! There was a problem submitting your form.";
+                        }
+                    });
+                }
+            }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your form.";
+            });
+        }
+        
+        form.addEventListener("submit", handleSubmit);
+    </script>
 
     </body>
 </html>
