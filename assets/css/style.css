@@ -231,7 +231,7 @@
 
 .accordion {
     background-color: black;
-    color: #595656;
+    color: white;
     cursor: pointer;
     padding: 18px;
     margin: 10px 0;
@@ -265,7 +265,7 @@
 
 .panel {
     padding: 0 18px;
-    background-color: black;
+    background-color: white;
     max-height: 0;
     overflow: hidden;
     border-radius: 5px;
@@ -277,7 +277,7 @@
         padding: 0 2rem;
     }
 
-    h2 {
+    .free {
         font-size: 1.5rem;
     }
 
@@ -2414,6 +2414,12 @@ padding:39px 15px
 .header-area .main-header .main-menu ul li:hover>a{
 color:yellow
 }
+
+#navigation li a.active {
+    color: yellow;
+}
+
+
 .header-area .main-header .main-menu ul ul.submenu{
 position:absolute;width:170px;background:rgba(43,43,43,0.7);left:0;top:80%;visibility:hidden;opacity:0;box-shadow:0 0 10px 3px rgba(0,0,0,0.05);padding:17px 0;-webkit-transition:.3s;-moz-transition:.3s;-o-transition:.3s;transition:.3s
 }
@@ -2425,6 +2431,10 @@ padding:6px 10px !important;font-size:16px;text-transform:capitalize;margin:0
 }
 .header-area .main-header .main-menu ul ul.submenu>li>a:hover{
 color:yellow;background:none
+}
+
+#navigation li a.active {
+    color: yellow;
 }
 .header-area .main-menu ul ul.submenu>li>a:hover{
 padding-left:13px !important

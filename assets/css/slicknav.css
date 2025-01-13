@@ -210,7 +210,9 @@
     border-radius: 0;
     color: #ffffff;
 }
-
+#navigation li a.active {
+  color: yellow;
+}
 .slicknav_nav a {
     font-size: 14px;
     font-weight: 400;

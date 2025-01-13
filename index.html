@@ -89,13 +89,14 @@
                                 <div class="main-menu f-right d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a href="index.html">HOME</a></li>
-                                            <li><a href="about.html">ABOUT US</a></li>
-                                            <li><a href="gallery.html">GALLERY</a></li>
-                                            <li><a href="contact.html">CONTACT US</a></li>
+                                            <li><a href="index.html" id="home-link">HOME</a></li>
+                                            <li><a href="about.html" id="about-link">ABOUT US</a></li>
+                                            <li><a href="gallery.html" id="gallery-link">GALLERY</a></li>
+                                            <li><a href="contact.html" id="contact-link">CONTACT US</a></li>
                                         </ul>
                                     </nav>
                                 </div>
+                                
                                 <div class="header-right-btn f-right d-none d-lg-block ml-30">
                                     <a href="contact.html" class="btn header-btn">Become a Fitness Insider</a>
                                 </div>
@@ -360,7 +361,7 @@
                         <li>6-Month Fee: RS.28000/-</li>
                         <li>Great for dedicated transformations!</li>
                     </ul>
-                    <a href="contact.htmlcontact.html" class="btn header-btn">Get Started</a>
+                    <a href="contact.html" class="btn header-btn">Get Started</a>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
@@ -611,29 +612,29 @@
     <section>
         <button class="accordion" aria-expanded="false">1. What are the membership plans offered by your gym?</button>
         <div class="panel">
-            <p style="color: white;">We offer flexible membership plans to suit every fitness goal and lifestyle. Choose from monthly, quarterly, or yearly packages.</p>
+            <p style="color: black;">We offer flexible membership plans to suit every fitness goal and lifestyle. Choose from monthly, quarterly, or yearly packages.</p>
         </div>
     </section>
     <section>
         <button class="accordion" aria-expanded="false">2. Do you offer personal training</button>
         <div class="panel">
-            <p style="color: white;">Yes, we provide personal training sessions tailored to your fitness goals.</p>
+            <p style="color:black;">Yes, we provide personal training sessions tailored to your fitness goals.</p>
         </div>
     </section>
     <section>
         <button class="accordion" aria-expanded="false">3. What are your gym’s operating hours?</button>
         <div class="panel">
-            <p style="color: white;">Our gym is open Monday to Saturday from  5 AM - 1 PM and  3 PM - 10 PM .</p>
+            <p style="color: black;">Our gym is open Monday to Saturday from  5 AM - 1 PM and  3 PM - 10 PM .</p>
         </div>
     </section>
     <button class="accordion" aria-expanded="false">4. Is your gym beginner-friendly?</button>
         <div class="panel">
-            <p style="color: white;">Absolutely! Our gym is designed to cater to all fitness levels, from beginners to advanced athletes. We offer beginner-friendly workout plans, onboarding sessions, and personal trainers to guide you through your fitness journey.</p>
+            <p style="color: black;">Absolutely! Our gym is designed to cater to all fitness levels, from beginners to advanced athletes. We offer beginner-friendly workout plans, onboarding sessions, and personal trainers to guide you through your fitness journey.</p>
         </div>
     </section>
     <button class="accordion" aria-expanded="false">5. What safety and hygiene measures does your gym follow?</button>
         <div class="panel">
-            <p style="color: white;">We prioritize your health and safety by maintaining high hygiene standards. Our gym is cleaned and sanitized regularly, with special attention to equipment and common areas.</p>
+            <p style="color: black;">We prioritize your health and safety by maintaining high hygiene standards. Our gym is cleaned and sanitized regularly, with special attention to equipment and common areas.</p>
         </div>
     </section>
 </div>
@@ -865,7 +866,7 @@
             <div class="col-md-4">
                 <div class="gt-text">
                     <i class="fa fa-map-marker"></i>
-                    <p style="font-size: 13px;">Victory Fitness, AKG NAGAR ROAD, Peroorkkada, Thiruvananthapuram -  695005 (Opposite SBI)</p>
+                    <p style="font-size: 13px;">Victory Fitness, AKG NAGAR ROAD, Peroorkada, Thiruvananthapuram -  695005 (Opposite SBI)</p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -910,10 +911,10 @@
                             <div class="footer-tittle">
                                 <h4 style="font-size: 15px;">SITE MAP</h4>
                                 <ul>
-                                    <li style="font-size: 14px;"><a href="">Home</a></li>
-                                    <li style="font-size: 14px;"><a href="">About Us</a></li>
-                                    <li style="font-size: 14px;"><a href="">Gallery</a></li>
-                                    <li style="font-size: 14px;"><a href="">Contact Us</a></li>
+                                    <li style="font-size: 14px;"><a href="index.html">Home</a></li>
+                                    <li style="font-size: 14px;"><a href="about.html">About Us</a></li>
+                                    <li style="font-size: 14px;"><a href="gallery.html">Gallery</a></li>
+                                    <li style="font-size: 14px;"><a href="contact.html">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -968,6 +969,35 @@
     <div id="back-top" >
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt" style="color: black;"></i></a>
     </div>
+
+
+
+
+
+<!----------------------------nav active----------------------------------->
+
+<script>
+    // Get the current page URL
+    const currentPage = window.location.pathname.split("/").pop(); // Get the file name (e.g., 'index.html')
+    
+    // Map page paths to their respective link IDs
+    const menuLinks = {
+        'index.html': 'home-link',
+        'about.html': 'about-link',
+        'gallery.html': 'gallery-link',
+        'contact.html': 'contact-link',
+    };
+    
+    // Get the ID of the link for the current page
+    const activeLinkId = menuLinks[currentPage];
+    
+    // Add the 'active' class to the current page's link
+    if (activeLinkId) {
+        document.getElementById(activeLinkId).classList.add('active');
+    }
+    
+    </script>
+    
 
     <!-- JS here -->
 
@@ -1098,30 +1128,6 @@
     })
 </script>
 
-
-
-<script>
-    const accordions = document.querySelectorAll('.accordion');
-
-    accordions.forEach(accordion => {
-        accordion.addEventListener('click', function () {
-            // Toggle the open class
-            this.classList.toggle('open');
-
-            // Toggle the aria-expanded attribute
-            const isExpanded = this.getAttribute('aria-expanded') === 'true';
-            this.setAttribute('aria-expanded', !isExpanded);
-
-            // Expand or collapse the panel
-            const panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    });
-</script>
 
     
     </body>

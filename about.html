@@ -81,12 +81,10 @@
                                 <div class="main-menu f-right d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a href="index.html">HOME</a></li>
-                                            <li><a href="about.html">ABOUT US</a></li>
-                                            <!--<li><a href="services.html">SERVICES</a></li>
-                                            <li><a href="schedule.html">SCHEDULES</a></li>--->
-                                            <li><a href="gallery.html">GALLERY</a></li>
-                                            <li><a href="contact.html">CONTACT US</a></li>
+                                            <li><a href="index.html" id="home-link">HOME</a></li>
+                                            <li><a href="about.html" id="about-link">ABOUT US</a></li>
+                                            <li><a href="gallery.html" id="gallery-link">GALLERY</a></li>
+                                            <li><a href="contact.html" id="contact-link">CONTACT US</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -217,7 +215,7 @@
             <div class="col-md-4">
                 <div class="gt-text">
                     <i class="fa fa-map-marker"></i>
-                    <p style="font-size: 13px;">Victory Fitness, AKG NAGAR ROAD, Peroorkkada, Thiruvananthapuram -  695005 (Opposite SBI)</p>
+                    <p style="font-size: 13px;">Victory Fitness, AKG NAGAR ROAD, Peroorkada, Thiruvananthapuram -  695005 (Opposite SBI)</p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -262,10 +260,10 @@
                             <div class="footer-tittle">
                                 <h4 style="font-size: 15px;">SITE MAP</h4>
                                 <ul>
-                                    <li style="font-size: 14px;"><a href="">Home</a></li>
-                                    <li style="font-size: 14px;"><a href="">About Us</a></li>
-                                    <li style="font-size: 14px;"><a href="">Gallery</a></li>
-                                    <li style="font-size: 14px;"><a href="">Contact Us</a></li>
+                                    <li style="font-size: 14px;"><a href="index.html">Home</a></li>
+                                    <li style="font-size: 14px;"><a href="about.html">About Us</a></li>
+                                    <li style="font-size: 14px;"><a href="gallery.html">Gallery</a></li>
+                                    <li style="font-size: 14px;"><a href="contact.html">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -319,6 +317,32 @@
     <div id="back-top" >
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt" style="color:black;"></i></a>
     </div>
+
+
+<!----------------------------nav active----------------------------------->
+
+<script>
+    // Get the current page URL
+    const currentPage = window.location.pathname.split("/").pop(); // Get the file name (e.g., 'index.html')
+    
+    // Map page paths to their respective link IDs
+    const menuLinks = {
+        'index.html': 'home-link',
+        'about.html': 'about-link',
+        'gallery.html': 'gallery-link',
+        'contact.html': 'contact-link',
+    };
+    
+    // Get the ID of the link for the current page
+    const activeLinkId = menuLinks[currentPage];
+    
+    // Add the 'active' class to the current page's link
+    if (activeLinkId) {
+        document.getElementById(activeLinkId).classList.add('active');
+    }
+    
+    </script>
+
 
     <!-- JS here -->
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
@@ -387,6 +411,8 @@
     });
     
 </script>
+
+
     
     </body>
 </html>

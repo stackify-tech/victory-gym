@@ -1,6 +1,6 @@
 <?php
     // Set the recipient email
-    $to = "chippuu715@gmail.com";
+    $to = "";
 
     // Sanitize and validate inputs
     $from = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
