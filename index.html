@@ -1106,6 +1106,32 @@
 </script>
 
 
+<!-------------------------faqs query------------------------------------------->
+<script>
+    const accordions = document.querySelectorAll('.accordion');
+
+    accordions.forEach(accordion => {
+        accordion.addEventListener('click', function () {
+            // Toggle the open class
+            this.classList.toggle('open');
+
+            // Toggle the aria-expanded attribute
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !isExpanded);
+
+            // Expand or collapse the panel
+            const panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    });
+</script>
+
+
+
 
 
 <!--   *****   Isotope Filter Link   *****  -->
