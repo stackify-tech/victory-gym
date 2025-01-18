@@ -1,46 +1,121 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&display=swap");
 
+
 .about {
-    font-family: "Barlow", sans-serif; /* new change */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
     background-color: black;
-    color: #fff;
 }
 
-.icon-circle {
-    margin-top: 35px;
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: rgb(231, 229, 229);
-    line-height: 60px;
-    text-align: center;
-    font-size: 30px;
+.text-section, .image-section {
+    flex: 1 1 45%; /* Default width */
+    max-width: 45%;
+    margin: 10px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 2.5s ease-out forwards; /* Slowed down to 2.5 seconds */
 }
 
-
-.text-warning {
-    color: yellow !important;
+.text-section {
+    text-align: justify;
 }
 
-
-
-.progress-bar {
-    height: 4px;
-    color: yellow !important;
-    
+.text-section .head {
+    color: yellow;
+    font-size: 5rem; /* Default size for large screens */
 }
 
-
-.progress{
-    height: 4px;
+.text-section .pa {
+    line-height: 1.6;
+    font-size: 1.6rem; /* Reduced font size for readability across devices */
+    color: white;
 }
 
-
-.fit {
-    margin-top: 35px;
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Keyframes for the fade-in and slide-up animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+
+/* For screens larger than 1200px (ultrawide monitors) */
+@media (min-width: 1200px) {
+    .text-section, .image-section {
+        flex: 1 1 40%;
+        max-width: 40%;
+    }
+
+    .text-section .head {
+        font-size: 4.5rem; /* Slightly smaller font size for extra-large screens */
+    }
+
+    .text-section .pa {
+        font-size: 1.8rem; /* Adjust text for readability */
+    }
+}
+
+/* For medium devices (tablets, 768px to 1200px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .text-section, .image-section {
+        flex: 1 1 50%;
+        max-width: 50%;
+    }
+
+    .text-section .head {
+        font-size: 4rem; /* Smaller font size for medium screens */
+    }
+
+    .text-section .pa {
+        font-size: 1.5rem; /* Adjust text size for tablets */
+    }
+}
+
+/* For small devices (mobile, 480px to 767px) */
+@media (max-width: 767px) {
+    .text-section, .image-section {
+        flex: 1 1 100%; /* Full-width for smaller screens */
+        max-width: 100%;
+    }
+
+    .text-section .head {
+        font-size: 3rem; /* Further reduced font size */
+    }
+
+    .text-section .pa {
+        font-size: 1.4rem; /* Smaller text for mobile screens */
+    }
+}
+
+/* For extra-small devices (below 480px) */
+@media (max-width: 479px) {
+    .text-section .head {
+        font-size: 2.5rem; /* Adjust heading size */
+    }
+
+    .text-section .pa {
+        font-size: 1.2rem; /* Adjust paragraph size */
+    }
+}
 
 
 
@@ -2545,7 +2620,7 @@ height:550px
 background-image:url(../img/hero/hero2.png);background-repeat:no-repeat;background-size:cover
 }
 .slider-area{
-margin-top:-1px;background-image:url(../img/hero/h3_hero.jpg);background-repeat:no-repeat;background-position:top center;background-size:cover; background-attachment: scroll; /* Adjust for mobile devices */
+margin-top:-1px;background-image:url(../img/hero/h5_hero.jpg);background-repeat:no-repeat;background-position:top center;background-size:cover; background-attachment: scroll; /* Adjust for mobile devices */
 }
 
 @media only screen and (min-width: 992px) {
